@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./css/style.css"></script>
+</head>
+
+<body class="overflow-x-hidden">
+    <div class=" bg-local bg-slate-500 h-screen" style="background-image: url(/assets/img/download\ 1.png)">
+        <div class="text-center pt-[3rem] text-[2rem] text-white">
+            <h3> Create Your Acount</h3>
+            <span class="text-[1rem]">let’s get start with your account</span>
+        </div>
+        <form action="/register" method="POST">
+            <!-- 2 column grid layout with text inputs for the first and last names -->
+            <div class="row-auto">
+                <div class="col-md-12 mb-4">
+                    <div class="ml-[20rem]">
+                        <input type="text" name="name" id="form3Example2" class="form-control" />
+                        <label class="form-label" for="form3Example2">Full Name</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Email input -->
+            <div class="ml-[20rem] mb-4">
+                <input type="email" name="email" id="form3Example3" class="form-control" />
+                <label class="form-label" for="form3Example3">Email address</label>
+            </div>
+
+            <!-- Password input -->
+            <div class="ml-[20rem] form-outline mb-4">
+                <input type="password" name="password" id="form3Example4" class="form-control" />
+                <label class="form-label" for="form3Example4">Password</label>
+            </div>
+
+            <!-- Submit button -->
+            <button type="submit" class="ml-[20rem] btn btn-primary btn-block mb-4">
+                Sign up
+            </button>
+
+            <!-- Register buttons -->
+            <div class="text-center">
+                <p>Already have an account? <a href="/login">Login</a></p>
+
+            </div>
+        </form>
+        <p>do you have already Acount <a href="/login">Login</a> </p>
+    </div>
+</body>
+
+</html>

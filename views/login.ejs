@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id"
+        content="45500789441-gu303o264caprj78fcc4mak0fe469mvq.apps.googleusercontent.com">
+    <title>log_in</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/css/style.css"></script>
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <div class="bg-slate-400 py-2">
+            <p><img src="./assets/img/Keeping_Up_With_Google-removebg-preview 1.png" alt=""></p>
+
+        </div>
+    </header>
+
+    <!--Boddy-->
+    <div class="grid grid-cols-2 gap-0">
+        <div class="bg-violet-200 ">
+            <!--Head-->
+            <p class="pt-[10rem] text-center text-[5rem]">HI! THERE </p>
+            <p class="text-center font-semibold text-[1rem]">Welcome To Pregnant Assistant Tracker</p>
+            <div class="ml-[16rem] g-signin2" data-onsuccess="onSignIn"></div>
+            <div class="data">
+                <p>name</p>
+                <p id="name"></p>
+                <p id="alert">profile</p>
+                <img id="image" src="/assets/img/do dont.png" alt="">
+                <p>Email</p>
+                <p id="email"></p>
+                <button type="button
+                " onclick="signedOut()">sign out</button>
+            </div>
+            <p class="text-center pt-[10rem] text-2xl font-semibold">--------------OR---------------</p>
+            <!--Input-->
+            <section class="ml-[11rem] pt-[3rem]">
+                <p class="text-[1.2rem]">Username</p>
+                <input class="outline  flex py-1 px-16 gap-9 " type="text" placeholder="">
+                <p class="mt-6 text-[1.2rem]">Password</p>
+                <input class="outline py-1 px-16" type="text" placeholder="">
+                <p class="pl-[11rem] text-blue-700 font-semibold font-serif">
+                    <a href="">Forgot Password ?</a>
+                </p>
+                <p>
+                    <a class="bg-zinc-600 text-white rounded-xl px-[8rem] font-serif mt-[2rem] " type="button"
+                        href="#">Log
+                        in</a>
+                </p>
+                <p class="font-semibold ml-2">
+                    Don’t have an account ?
+                    <a class="text-blue-700" href="/register">Sign Up</a>
+                </p>
+            </section>
+        </div>
+        <div>
+            <figure>
+                <img src="/assets/img/MicrosoftTeams-image (4).png" alt="">
+            </figure>
+        </div>
+
+
+    </div>
+    <script src=" https://apis.google.com/js/platform.js" async defer>
+    </script>
+    <script src="./js/jquery.3.7.0.min.js"></script>
+</body>
+
+</html>
