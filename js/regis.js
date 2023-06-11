@@ -12,7 +12,10 @@ button.addEventListener("click", async () => {
     "https://mother-journey-be.vercel.app/users/register",
     {
       method: "POST",
-      body: {
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
         name: name.value,
         age: age.value,
         born: born.value,
@@ -20,9 +23,9 @@ button.addEventListener("click", async () => {
         city: city.value,
         email: email.value,
         password: password.value,
-      },
+      }),
     }
   );
   const data = await response.json();
-  console.log(name.value);
+  console.log(data);
 });
