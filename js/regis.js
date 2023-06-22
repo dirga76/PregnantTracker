@@ -28,4 +28,8 @@ button.addEventListener("click", async () => {
   );
   const data = await response.json();
   console.log(data);
+
+  if (data.message == "success") {
+    window.location.href = "/login.html";
+  }
 });
